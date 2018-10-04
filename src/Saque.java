@@ -38,6 +38,7 @@ public class Saque extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Saque");
 
         jLabel1.setText("Número da conta:");
 

@@ -40,7 +40,7 @@ public class Transferencia extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("transferência");
+        setTitle("Transferência");
 
         jLabel1.setText("Número da conta 1:");
 

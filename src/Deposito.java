@@ -37,6 +37,7 @@ public class Deposito extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Depósito");
 
         jLabel1.setText("Número da Conta:");
 

@@ -39,6 +39,7 @@ public class IGContas extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("operacões");
 
         jButton1.setText("Saque");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -154,7 +155,8 @@ public class IGContas extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-         JOptionPane.showMessageDialog(null, "Titular: "+ Principal.conta1.getNome() + "\n"
+
+        JOptionPane.showMessageDialog(null, "Titular: "+ Principal.conta1.getNome() + "\n"
                                           + "numero: "+ Principal.conta1.getNumero() +"\n"
                                           +"Conta Comum: " + Principal.conta1.getSaldo() + "\n\n"
                 
@@ -211,4 +213,6 @@ public class IGContas extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
+
+   
 }

@@ -6,7 +6,6 @@ import javax.swing.JOptionPane;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author admin
@@ -36,6 +35,7 @@ public class Reajustar extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Reajuste");
 
         jLabel1.setText("Taxa de Reajuste:");
 
@@ -89,25 +89,28 @@ public class Reajustar extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         if(tbTaxa.getText().equals(""))
-            JOptionPane.showMessageDialog(null, "preencha o campo");
-        else{
-            double i=Double.parseDouble(tbTaxa.getText());
-            if(i>0){
-                Poupanca.conta2.reajustar(i);
+        if (tbTaxa.getText().isEmpty()) {
+            double reajuste = Poupanca.conta2.getSaldo() * 0.1;
+            Poupanca.conta2.setSaldo(Poupanca.conta2.getSaldo() + reajuste);
+            JOptionPane.showMessageDialog(null, "Reajuste Realizado usando a taxa padrão com sucesso(10%)!");
+        } else {
+            double taxa = Double.parseDouble(tbTaxa.getText());
+            if (taxa > 0) {
+                taxa = taxa / 100;
+                double reajuste = Poupanca.conta2.getSaldo() * taxa;
+                Poupanca.conta2.setSaldo(Poupanca.conta2.getSaldo() + reajuste);
+                JOptionPane.showMessageDialog(null, "Reajuste Realizado com sucesso!");
             }
-            else {
-                Poupanca.conta2.reajustar();
-            }
-            new IGContas ().setVisible(true);
-            this.setVisible(false);
+        }
+        new IGContas().setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
-    }
+
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        new IGContas ().setVisible(true);
-            this.setVisible(false);
+        new IGContas().setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
-    
+
     /**
      * @param args the command line arguments
      */
