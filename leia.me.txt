@@ -1,0 +1,9 @@
+<h1> Readme </h1>
+<p>
+Nome: Rafael Benvindo Holanda Mendes
+Matricula:415546
+este manual é para  ajuda a usar o programa no netbeans, após baixar a pasta(se só baixou os arquivos, 
+crie uma pasta de nome Trabalho01 e coloque dentro dela), abra o netbeans(se não tiver, baixe), vá em arquivos -->abrir projeto, e depois
+rode o programa(f6), após isso abrirá a janela de boas vindas e o cadastro das 3 contas, coloque em nomes letras, em numero números inteiros e 
+no resto números positivos, depois chegará as opções e aí é intuitivo; não esqueça que deve navegar usando o mouse, ou tab para navegar e a 
+tecla space para confirmar</p>
